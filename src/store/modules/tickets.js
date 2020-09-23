@@ -20,7 +20,7 @@ const actions = {
         let data = {
           items: res.data.flights || []
         }
-        if(searchData && !searchData.options && !searchData.airlines)
+        if(!Object.keys(state.airlines).length)
           data.airlines = res.data.airlines || {}
           
         if(searchData && searchData.options && searchData.options.length){

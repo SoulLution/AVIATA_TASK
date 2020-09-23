@@ -10,9 +10,11 @@ Vue.config.productionTip = false
 // components
 import button from './components/button.vue'
 import checkBox from './components/check-box.vue'
+import popupMin from './components/popup-min.vue'
 
 Vue.component('vButton', button)
 Vue.component('vCheckBox', checkBox)
+Vue.component('vPopupMin', popupMin)
 
 
 // axios
